@@ -16,13 +16,7 @@ public class Application {
     @Bean
     public CommandLineRunner clr(ApplicationContext ctx) {
         return args -> {
-            System.out.println("Inspection.");
-
-            String[] beans = ctx.getBeanDefinitionNames();
-            Arrays.sort(beans);
-            for (String name : beans) {
-                System.out.println(name);
-            }
+            System.out.println("Started Up App");
         };
     }
 }
