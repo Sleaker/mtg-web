@@ -38,6 +38,7 @@ sourceSets {
 }
 
 dependencies {
+    // Spring framework
     compile ("org.springframework.boot:spring-boot-starter-web") {
         exclude module: "spring-boot-starter-jetty"
     }
@@ -45,12 +46,15 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-actuator'
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
 
+    // database driver
     compile 'com.h2database:h2'
-    
+
+    // logging facilities
     compile 'ch.qos.logback:logback-classic:1.2.3'
     compile 'ch.qos.logback:logback-core:1.2.3'
     compile 'org.slf4j:jcl-over-slf4j'
 
+    // junit test environment
     testCompile 'junit:junit'
 }
 

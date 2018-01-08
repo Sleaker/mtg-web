@@ -6,3 +6,4 @@ bin
 .vscode/*
 .sts4-cache/*
 .settings/*
+testdb.*
