@@ -14,7 +14,7 @@ apply plugin: 'org.springframework.boot'
 
 jar {
     baseName = 'mtg-web'
-    version = '1.0.0'
+    version = '0.1.0'
 }
 
 repositories {
