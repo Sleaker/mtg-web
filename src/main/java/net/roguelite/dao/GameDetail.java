@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name="GAME")
 public class GameDetail implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -35,5 +35,26 @@ public class GameDetail implements Serializable {
         private String keyCards;
 
         @Column(nullable = false)
-        private String notes; 
+        private int artifacts;
+
+        @Column(nullable = false)
+        private int creatures;
+
+        @Column(nullable = false)
+        private int planeswalkers;
+
+        @Column(nullable = false)
+        private int enchantments;
+
+        @Column(nullable = false)
+        private int instants;
+
+        @Column(nullable = false)
+        private int sorceries;
+
+        @Column(nullable = false)
+        private int turns;
+
+        @Column(nullable = false)
+        private String notes;
 }
